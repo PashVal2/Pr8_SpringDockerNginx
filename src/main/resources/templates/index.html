@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/base.css">
+</head>
+<body>
+<main>
+    <h1>Домашняя страница</h1>
+    <p><a href="/author">Пользователи</a></p>
+    <p><a href="/serverInfo">Информационно-административная веб-страница</a></p>
+    <p><a href="/sort">Сортировка</a>
+    <p><a href="/svg">Рисовальня</a>
+    <p><a href="/html/lombardIndex.html">Ломбард</a>
+    <p><a href="/fileList">Файлы</a>
+    <p><a href="/statistics">Статистика</a>
+
+    <div th:if="${chart}">
+        <p th:text="${chart}"></p>
+    </div>
+</main>
+</body>
+</html>

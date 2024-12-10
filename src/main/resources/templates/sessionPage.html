@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/theme.css">
+</head>
+<body th:class="${theme}">
+<main>
+    <h1><span th:text="${login}"></span>!</h1>
+    <p th:if="${language == 'ru'}">Это ваша персонализированная страница.</p>
+    <p th:if="${language == 'en'}">This is your personalized page.</p>
+</main>
+</body>
+</html>
